@@ -12,14 +12,16 @@ namespace TriangleTracker{
     }
 
      public string TriangleTyper(){
+       
+       if((SideOne > (SideTwo + SideThree)) || (SideTwo > (SideOne + SideThree)) || (SideThree > (SideOne + SideTwo))){
+         return "is not a triangle";
+       }
        if(SideOne == SideTwo && SideOne == SideThree){
          return "equilateral";
        }
        if(SideOne == SideTwo || SideOne == SideThree || SideTwo == SideThree){
-         return "isoscelese";
+         return "isosceles";
        }
-
-      
        else{
          return "scalene";
        }
