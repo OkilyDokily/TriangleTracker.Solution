@@ -18,7 +18,11 @@ namespace TriangleTracker{
        if(SideOne == SideTwo || SideOne == SideThree || SideTwo == SideThree){
          return "isoscelese";
        }
-       return "";
+
+      
+       else{
+         return "scalene";
+       }
      } 
   }
 
