@@ -12,6 +12,9 @@ namespace TriangleTracker{
       int sideThree = int.Parse(Console.ReadLine());
 
       Triangle t = new Triangle(sideOne,sideTwo, sideThree);
+
+      string result = t.TriangleTyper();
+      Console.WriteLine("That is " + result);
     }
   }
 }
